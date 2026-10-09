@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/nextgen-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07090b" />
+    <title>NextGen Technologies — Building Today. Powering Tomorrow.</title>
+    <meta name="description" content="NextGen Technologies is a parent technology company and digital venture builder, creating digital platforms, products, and ideas designed for the world ahead." />
+    
+    <!-- Theme Initializer: Hardcoded to dark -->
+    <script>
+      document.documentElement.classList.add('dark');
+      document.documentElement.style.colorScheme = 'dark';
+
+      // Auto-hide scrollbar: adds .is-scrolling while user scrolls
+      (function() {
+        var timer;
+        window.addEventListener('scroll', function() {
+          document.documentElement.classList.add('is-scrolling');
+          clearTimeout(timer);
+          timer = setTimeout(function() {
+            document.documentElement.classList.remove('is-scrolling');
+          }, 1200);
+        }, { passive: true });
+      })();
+    </script>
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NextGen Technologies — Building Today. Powering Tomorrow." />
+    <meta property="og:description" content="One company. Multiple technologies. One ecosystem. Building thoughtful, useful digital platforms designed for what comes next." />
+    <meta property="og:image" content="/nextgen-logo.png" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 dark:bg-dark-950 text-slate-900 dark:text-silver-200 antialiased selection:bg-cyan-accent selection:text-dark-950 overflow-x-hidden min-h-screen transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
